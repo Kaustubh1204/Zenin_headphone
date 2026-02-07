@@ -9,8 +9,8 @@
   --color-background: #050505;
   --color-background-secondary: #0A0A0C;
   --color-foreground: #ededed;
-  --color-sony-blue: #0050FF;
-  --color-sony-cyan: #00D6FF;
+  --color-zenin-blue: #0050FF;
+  --color-zenin-cyan: #00D6FF;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui;
 }

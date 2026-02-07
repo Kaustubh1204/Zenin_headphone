@@ -50,12 +50,17 @@ export const ScrollyCanvas = ({ className }: { className?: string }) => {
         canvas.height = canvas.clientHeight;
 
         const rect = canvas.getBoundingClientRect();
+        const isMobile = rect.width < 768;
         const scale = Math.max(
             rect.width / img.width,
             rect.height / img.height
-        ) * 0.85;
-        const x = (rect.width * 0.75) - (img.width * scale / 2);
-        const y = ((rect.height - img.height * scale) / 2) + (rect.height * 0.1);
+        ) * (isMobile ? 0.6 : 0.85);
+
+        const x = isMobile
+            ? (rect.width - img.width * scale) / 2
+            : (rect.width * 0.75) - (img.width * scale / 2);
+
+        const y = ((rect.height - img.height * scale) / 2) + (rect.height * (isMobile ? 0 : 0.1));
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, x, y, img.width * scale, img.height * scale);

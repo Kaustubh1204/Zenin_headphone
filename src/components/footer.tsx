@@ -6,7 +6,7 @@ export function Footer() {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex items-center gap-2">
                     <span className="text-lg font-medium tracking-tight text-white/90">
-                        Sony
+                        Zenin
                     </span>
                     <span className="text-white/40">|</span>
                     <span className="text-lg font-medium tracking-tight text-white">
@@ -24,7 +24,7 @@ export function Footer() {
                 </nav>
 
                 <div className="text-xs text-white/40">
-                    © {new Date().getFullYear()} Sony Group Corporation.
+                    © {new Date().getFullYear()} Zenin Group Corporation.
                 </div>
             </div>
         </footer>

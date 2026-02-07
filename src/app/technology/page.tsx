@@ -22,7 +22,7 @@ export default function TechnologyPage() {
                 </div>
 
                 <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center">
-                    <div className="w-full md:w-[50%] lg:w-[45%] flex flex-col space-y-8 pl-4 md:pl-8 border-l-2 border-white/10">
+                    <div className="w-full md:w-[60%] lg:w-[45%] flex flex-col space-y-6 md:space-y-8 pl-4 md:pl-8 border-l-2 border-white/10">
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -31,7 +31,7 @@ export default function TechnologyPage() {
                             <h2 className="text-white/60 text-sm tracking-[0.2em] uppercase font-semibold mb-4">
                                 Core Audio Engine
                             </h2>
-                            <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none drop-shadow-2xl">
+                            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-none drop-shadow-2xl">
                                 Driver System
                             </h1>
                         </motion.div>
@@ -42,10 +42,10 @@ export default function TechnologyPage() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="space-y-6"
                         >
-                            <p className="text-white/90 text-lg md:text-xl font-medium leading-relaxed drop-shadow-md">
+                            <p className="text-white/90 text-base sm:text-lg md:text-xl font-medium leading-relaxed drop-shadow-md">
                                 The 30mm precision-engineered dynamic driver unit features a soft edge diaphragm, enhancing noise canceling in low frequency ranges.
                             </p>
-                            <p className="text-white/70 text-base leading-relaxed max-w-md drop-shadow-sm">
+                            <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-md drop-shadow-sm">
                                 A high-rigidity carbon fiber composite dome delivers natural sound quality. Magnet and voice coil alignment are optimized for deep bass and distortion-free clarity.
                             </p>
                         </motion.div>
@@ -68,10 +68,10 @@ export default function TechnologyPage() {
             <div className="relative w-full z-10 bg-[#050505] space-y-24 py-24">
 
                 {/* Acoustic Chamber - Split Layout: Text Left | Image Right */}
-                <section className="w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
+                <section className="w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-24">
 
                     {/* Text Side (Left) */}
-                    <div className="w-full md:w-[40%] flex flex-col justify-center space-y-6 order-2 md:order-1">
+                    <div className="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-center space-y-6 order-2 md:order-1 px-4 md:px-0">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function TechnologyPage() {
                             viewport={{ once: true }}
                         >
                             <span className="text-white/50 text-xs tracking-widest uppercase font-semibold mb-2 block">Precise Engineering</span>
-                            <h2 className="text-white text-3xl md:text-5xl font-bold tracking-tight leading-tight">
+                            <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
                                 Acoustic Chamber
                             </h2>
                         </motion.div>
@@ -90,7 +90,7 @@ export default function TechnologyPage() {
                             transition={{ duration: 0.8, delay: 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <p className="text-white/60 text-base md:text-lg leading-relaxed">
+                            <p className="text-white/60 text-base sm:text-lg leading-relaxed">
                                 Optimized cavity geometry minimizes resonance. Layered damping and airflow management provide clarity, balance, and rich tonal response.
                             </p>
                         </motion.div>
@@ -135,7 +135,7 @@ export default function TechnologyPage() {
                             <span className="text-white/60 text-sm tracking-[0.2em] uppercase font-semibold mb-4 block">
                                 Endurance & Efficiency
                             </span>
-                            <h2 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none drop-shadow-2xl">
+                            <h2 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-none drop-shadow-2xl">
                                 Power System
                             </h2>
                         </motion.div>
@@ -146,10 +146,10 @@ export default function TechnologyPage() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             viewport={{ once: true }}
                         >
-                            <p className="text-white/80 text-lg md:text-2xl font-medium leading-relaxed max-w-2xl drop-shadow-lg">
+                            <p className="text-white/80 text-lg sm:text-xl md:text-2xl font-medium leading-relaxed max-w-2xl drop-shadow-lg">
                                 High-capacity lithium battery with precise intelligent power management.
                             </p>
-                            <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-xl mx-auto mt-4 drop-shadow-md">
+                            <p className="text-white/60 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto mt-4 drop-shadow-md">
                                 Dedicated internal routing ensures consistent voltage delivery and rapid charging performance for all-day listening.
                             </p>
                         </motion.div>

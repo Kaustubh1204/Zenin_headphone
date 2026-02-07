@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function BuyPage() {
     return (
-        <main className="min-h-screen w-full bg-[#050505] text-white selection:bg-[#0050FF]/30 font-sans">
+        <main className="min-h-screen w-full bg-[#050505] text-white selection:bg-zenin-blue/30 font-sans">
             <SplitHero />
             <DecisionSupport />
         </main>
@@ -29,7 +29,7 @@ function SplitHero() {
                     {/* Replace with actual high-res render. Using a technology asset or frame 001 as placeholder */}
                     <Image
                         src={selectedColor === "black" ? "/hc/ezgif-frame-001.jpg" : "/hc/ezgif-frame-001.jpg"}
-                        alt="Sony WH-1000XM6"
+                        alt="Zenin WH-1000XM6"
                         fill
                         className="object-contain drop-shadow-2xl"
                         priority
@@ -44,7 +44,7 @@ function SplitHero() {
                     {/* Header */}
                     <div className="space-y-2">
                         <h1 className="text-4xl font-medium tracking-tight text-white md:text-5xl">
-                            Sony WH-1000XM6
+                            Zenin WH-1000XM6
                         </h1>
                         <p className="text-lg text-white/60 font-medium">
                             Industry-leading noise cancellation. Refined.
@@ -110,7 +110,7 @@ function SplitHero() {
                             </div>
                             <div className="flex items-center gap-1.5">
                                 <ShieldCheck className="w-3.5 h-3.5" />
-                                <span>1-year Sony warranty</span>
+                                <span>1-year Zenin warranty</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                                 <Package className="w-3.5 h-3.5" />
@@ -148,7 +148,7 @@ function DecisionSupport() {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                     <FeatureCard
                         title="Noise Cancellation"
-                        text="Sony’s most advanced adaptive noise cancelling yet. Silences the world around you."
+                        text="Zenin’s most advanced adaptive noise cancelling yet. Silences the world around you."
                     />
                     <FeatureCard
                         title="Sound Quality"

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <div className="relative w-full bg-background selection:bg-sony-blue/30">
+        <div className="relative w-full bg-background selection:bg-zenin-blue/30">
 
             {/* The Stickiness Wrapper */}
             {/* We need a tall container to scroll through. */}
@@ -36,24 +36,24 @@ export default function Home() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="text-6xl font-bold tracking-tighter text-white md:text-8xl"
+                            className="text-4xl font-bold tracking-tighter text-white sm:text-6xl md:text-8xl"
                         >
-                            Sony <span className="text-white/40">WH-1000XM6</span>
+                            Zenin <span className="text-white/40">WH-1000XM6</span>
                         </motion.h1>
                         <motion.p
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ delay: 0.2, duration: 0.8 }}
-                            className="mt-4 text-xl text-white/60 md:text-2xl"
+                            className="mt-4 text-lg text-white/60 sm:text-xl md:text-2xl"
                         >
                             Silence, perfected.
                         </motion.p>
                     </Section>
 
                     {/* Engineering Reveal */}
-                    <Section start="25%" end="40%" className="items-start justify-center pl-10 md:pl-24">
+                    <Section start="25%" end="40%" className="items-start justify-center px-6 sm:px-12 md:pl-24">
                         <div className="max-w-xl text-left">
-                            <h2 className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
+                            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
                                 Precision-engineered
                                 <br />
                                 <span className="text-white/40">for silence.</span>
@@ -66,12 +66,12 @@ export default function Home() {
                     </Section>
 
                     {/* Noise Cancelling */}
-                    <Section start="50%" end="65%" className="items-end justify-center pr-10 md:pr-24">
+                    <Section start="50%" end="65%" className="items-end justify-center px-6 sm:px-12 md:pr-24">
                         <div className="max-w-xl text-right">
-                            <h2 className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
+                            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
                                 Adaptive noise
                                 <br />
-                                <span className="text-sony-blue">cancelled.</span>
+                                <span className="text-zenin-blue">cancelled.</span>
                             </h2>
                             <p className="mt-6 text-lg leading-relaxed text-white/60">
                                 Multi-microphone array listens in every direction.
@@ -82,9 +82,9 @@ export default function Home() {
                     </Section>
 
                     {/* Sound & Upscaling */}
-                    <Section start="75%" end="85%" className="justify-center text-center">
+                    <Section start="75%" end="85%" className="justify-center text-center px-6">
                         <div className="max-w-2xl text-center">
-                            <h2 className="text-4xl font-semibold tracking-tight text-white md:text-5xl text-glow-blue">
+                            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl text-glow-blue">
                                 Immersive, lifelike sound.
                             </h2>
                             <p className="mt-6 text-lg leading-relaxed text-white/60">
@@ -95,22 +95,22 @@ export default function Home() {
                     </Section>
 
                     {/* Reassembly & CTA */}
-                    <Section start="90%" end="98%" className="justify-center text-center">
+                    <Section start="90%" end="98%" className="justify-center text-center px-6">
                         <div className="flex flex-col items-center">
-                            <h2 className="text-5xl font-bold tracking-tight text-white md:text-7xl">
+                            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-7xl">
                                 Hear everything.
                             </h2>
                             <p className="mt-4 text-xl text-white/60">
                                 Designed for focus, crafted for comfort.
                             </p>
-                            <div className="mt-10 flex gap-6 pointer-events-auto">
+                            <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 pointer-events-auto items-center">
                                 <Link href="/technology">
-                                    <button className="rounded-full bg-white px-8 py-4 text-lg font-medium text-black transition-transform hover:scale-105">
+                                    <button className="w-full sm:w-auto rounded-full bg-white px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-black transition-transform hover:scale-105">
                                         Experience XM6
                                     </button>
                                 </Link>
                                 <Link href="/specs">
-                                    <button className="text-lg font-medium text-white/60 hover:text-white">
+                                    <button className="text-base sm:text-lg font-medium text-white/60 hover:text-white py-2">
                                         See specs
                                     </button>
                                 </Link>
@@ -122,7 +122,7 @@ export default function Home() {
             </div>
 
 
-            
+
         </div>
     );
 }

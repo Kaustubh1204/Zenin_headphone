@@ -12,7 +12,7 @@ const config: Config = {
         background: "#050505", // Deep near-black charcoal
         "background-secondary": "#0A0A0C", // Subtle variation
         foreground: "#ededed",
-        sony: {
+        zenin: {
           blue: "#0050FF", // Rich deep blue
           cyan: "#00D6FF", // Electric cyan
         },
